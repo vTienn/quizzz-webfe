@@ -1,0 +1,185 @@
+.layout-default {
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial", sans-serif;
+    min-height: 100vh;
+    /* Đảm bảo chiều cao của trang là 100% */
+    header {
+        background-color: orange;
+        color: #fff;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main {
+        padding: 20px;
+        flex: 1
+    }
+    footer {
+        background-color: #e6781e;
+        color: #fff;
+        font-size: 14px;
+        height: 120px;
+    }
+}
+
+.Menu {
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            position: relative;
+            margin-left: 20px;
+            .Link-to {
+                font-size: 17px;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    }
+    &__link {
+        list-style: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        &--active {
+            color: orange;
+        }
+    }
+    &__sub {
+        display: none !important; // Ẩn menu phụ
+        position: absolute; // Cho phép menu phụ xuất hiện bên dưới menu chính
+        background-color: #333; // Màu nền của menu phụ
+        right: 0px;
+        padding: 20px !important;
+    }
+    // Khi hover vào mục có menu phụ, hiển thị menu phụ
+    li:hover .menu__sub {
+        display: block !important;
+    }
+}
+
+.layout-default__accounts .button-login {
+    text-decoration: none;
+    background-color: #efe5ff;
+    color: #9876c4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.layout-default__logo {
+    display: flex;
+    align-items: center;
+}
+
+.layout-default__accounts .button-register {
+    text-decoration: none;
+    background-color: #efe5ff;
+    color: #9876c4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.layout-default__accounts .button-register:hover {
+    background-color: #6a3da5;
+    color: #efe5ff;
+}
+
+.layout-default__accounts .button-login:hover {
+    background-color: #6a3da5;
+    color: #efe5ff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//info user
+.box-info {
+    display: flex;
+    align-items: center;
+}
+
+.box-info .button-logout {
+    text-decoration: none;
+    background-color: #efe5ff;
+    color: #9876c4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.box-info .button-logout:hover {
+    background-color: #6a3da5;
+    color: #efe5ff;
+}
+
+.box-info .user-name:hover {
+    background-color: #6a3da5;
+    color: #efe5ff;
+}
+
+.box-info .user-name {
+    background-color: #efe5ff;
+    color: #9876c4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.box-info span {
+    margin-right: 2px;
+}
+
+.layout-default__footer {}
+
+.footer-left-exten a {
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer-rigt-detail {
+    display: flex;
+    align-items: center;
+}
+
+.footer-rigt-detail a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-right-img {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right-img img {
+    width: 90px;
+    height: 25px;
+}
+
+.footer-container {
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

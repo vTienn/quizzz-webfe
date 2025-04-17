@@ -1,0 +1,228 @@
+/*=============== GOOGLE FONTS ===============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 0%);
+    --body-font: "Poppins", sans-serif;
+    --h1-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+}
+
+
+/*=============== BASE ===============*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+input,
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*=============== LOGIN ===============*/
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.login-form {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-box {
+    flex: 1;
+}
+
+.login-form .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo ảnh phủ kín mà không méo */
+    object-position: center;
+    display: block;
+}
+
+.login__form {
+    flex: 1;
+    padding: 2.5rem;
+    background-color: orange;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(16px);
+}
+
+.login__title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.25rem;
+}
+
+.login__inputs,
+.login__box {
+    display: grid;
+}
+
+.login__inputs {
+    row-gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.login__box {
+    grid-template-columns: 1fr max-content;
+    column-gap: 0.75rem;
+    align-items: center;
+    border: 2px solid hsla(0, 0%, 100%, 0.7);
+    padding-inline: 1.25rem;
+    border-radius: 4rem;
+}
+
+.login__input,
+.login__button {
+    border: none;
+    outline: none;
+}
+
+.login__button:hover {
+    color: orange;
+}
+
+.login__input {
+    width: 100%;
+    background: none;
+    color: var(--white-color);
+    padding-block: 1rem;
+}
+
+.login__input::placeholder {
+    color: var(--white-color);
+}
+
+.login__box i {
+    font-size: 1.25rem;
+}
+
+.login__check,
+.login__check-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login__check {
+    margin-bottom: 1rem;
+    font-size: var(--small-font-size);
+}
+
+.login__check-box {
+    column-gap: 0.5rem;
+}
+
+.login__check-input {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--white-color);
+}
+
+.login__forgot {
+    color: var(--white-color);
+}
+
+.login__forgot:hover {
+    text-decoration: underline;
+}
+
+.login__button {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--white-color);
+    border-radius: 4rem;
+    color: var(--black-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login__register {
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+.login__register a {
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.login__register a:hover {
+    text-decoration: underline;
+}
+
+
+/*=============== AUTOFILL FIXES ===============*/
+
+.login__input {
+    background-color: transparent !important;
+    color: var(--white-color) !important;
+}
+
+.login__input:-webkit-autofill,
+.login__input:-webkit-autofill:focus {
+    background-color: transparent !important;
+    color: var(--white-color) !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-moz-autofill {
+    background-color: transparent !important;
+}
+
+
+/*=============== RESPONSIVE ===============*/
+
+@media screen and (max-width: 768px) {
+    .login-form {
+        flex-direction: column;
+        height: auto;
+    }
+    .image-box {
+        height: 200px;
+    }
+    .login__form {
+        padding: 2rem 1.5rem;
+    }
+}

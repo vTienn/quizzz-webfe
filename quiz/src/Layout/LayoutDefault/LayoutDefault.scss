@@ -5,8 +5,8 @@
     min-height: 100vh;
     /* Đảm bảo chiều cao của trang là 100% */
     header {
-        background-color: orange;
-        color: #fff;
+        background-color: #efefef;
+        color: black;
         padding: 30px;
         display: flex;
         justify-content: space-between;
@@ -17,8 +17,8 @@
         flex: 1
     }
     footer {
-        background-color: #e6781e;
-        color: #fff;
+        background-color: #efefef;
+        color: black;
         font-size: 14px;
         height: 120px;
     }
@@ -35,7 +35,7 @@
             margin-left: 20px;
             .Link-to {
                 font-size: 17px;
-                color: #fff;
+                color: black;
                 font-weight: 600;
             }
         }
@@ -65,8 +65,8 @@
 
 .layout-default__accounts .button-login {
     text-decoration: none;
-    background-color: #efe5ff;
-    color: #9876c4;
+    background-color: #f7d9c4;
+    color: black;
     border-radius: 10px;
     padding: 10px 20px;
     margin-right: 10px;
@@ -79,21 +79,19 @@
 
 .layout-default__accounts .button-register {
     text-decoration: none;
-    background-color: #efe5ff;
-    color: #9876c4;
+    background-color: #f7d9c4;
+    color: black;
     border-radius: 10px;
     padding: 10px 20px;
     margin-right: 10px;
 }
 
 .layout-default__accounts .button-register:hover {
-    background-color: #6a3da5;
-    color: #efe5ff;
+    background-color: #fff;
 }
 
 .layout-default__accounts .button-login:hover {
-    background-color: #6a3da5;
-    color: #efe5ff;
+    background-color: #fff;
 }
 
 .container {
@@ -113,26 +111,25 @@
 
 .box-info .button-logout {
     text-decoration: none;
-    background-color: #efe5ff;
-    color: #9876c4;
+    background-color: #f7d9c4;
+    color: black;
     border-radius: 10px;
     padding: 10px 20px;
     margin-right: 10px;
 }
 
 .box-info .button-logout:hover {
-    background-color: #6a3da5;
-    color: #efe5ff;
+    background-color: #fff;
 }
 
 .box-info .user-name:hover {
-    background-color: #6a3da5;
-    color: #efe5ff;
+    background-color: #fff;
 }
 
 .box-info .user-name {
-    background-color: #efe5ff;
-    color: #9876c4;
+    text-decoration: none;
+    background-color: #f7d9c4;
+    color: black;
     border-radius: 10px;
     padding: 10px 20px;
     margin-right: 10px;
@@ -159,9 +156,9 @@
 .footer-rigt-detail a {
     text-decoration: none;
     margin-right: 5px;
-    color: #fff;
     font-size: 20px;
     font-weight: 500;
+    color: black;
 }
 
 .footer-right-img {
@@ -182,4 +179,57 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.section-head {
+    border-radius: 5px;
+    background-image: url("https://vcdn-vnexpress.vnecdn.net/2021/12/15/yg-5788-1639532682.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 570px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.section-desc1 {
+    font-size: 27px;
+    color: #bbbbbb;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 50px;
+    color: #bbbbbb;
+    font-weight: bold;
+}
+
+.section-desc2 {
+    margin-top: 30px;
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-1 {
+    color: black;
+    background-color: #f7d9c4;
+    border: none;
+    height: 60px;
+    width: 180px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn-1:hover {
+    background-color: #fff;
+}
+
+.footer-left-exten a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
 }

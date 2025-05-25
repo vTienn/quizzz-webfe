@@ -1,0 +1,14 @@
+.result-item-selected {
+    color: red;
+}
+
+.result-item-correct {
+    color: green;
+}
+
+.form-item-answers {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
